@@ -8,6 +8,11 @@
 
 - ***`git add <filename>`*** : adds given untracked file to staging area for tracking.
 
+- ***`git commit -m "<message>"`*** : commits changes from staging area and creates a new version
+                                     based on your previous changes.
+
+- ***``***
+
     
 
 
