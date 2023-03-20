@@ -6,7 +6,7 @@
     - **repository** -> it is a folder whose version is managed by git
                         where we can track all the changes.
 
-- *** `
+- ***`git add <filename>`*** : adds given untracked file to staging area for tracking.
 
     
 
