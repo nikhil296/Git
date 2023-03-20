@@ -3,7 +3,7 @@
 ### Begineer level commands
 
 - ***`git init`*** -> it initializes a new git repository.
-                **repository** -> it is a folder whose version is managed by git
+                (nbsp)4**repository** -> it is a folder whose version is managed by git
                                     where we can track all the changes.
 
     
