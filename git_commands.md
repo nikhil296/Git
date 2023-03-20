@@ -1,27 +1,27 @@
 # Important Git Commands
 
 ### Begineer level commands
-***`git init`*** : it initializes a new git repository.
-    - **repository** : it is a folder whose version is managed by git
-                        where we can track all the changes.
+    ***`git init`*** : it initializes a new git repository.
+        - **repository** : it is a folder whose version is managed by git
+                            where we can track all the changes.
 
-***`git add <filename1> <filename2>`*** : adds given untracked file to staging area for tracking. we can add as many files here as we want. To add all files at once ***`"git add ."`*** (not recommended, as it is not safe).
+    ***`git add <filename1> <filename2>`*** : adds given untracked file to staging area for tracking. we can add as many files here as we want. To add all files at once ***`"git add ."`*** (not recommended, as it is not safe).
 
-***`git commit -m "<message>"`*** : commits changes from staging area and creates a new version
-                                     based on your previous changes.
+    ***`git commit -m "<message>"`*** : commits changes from staging area and creates a new version
+                                        based on your previous changes.
 
-***`git log`*** : shows the history of commits made with details about the commit.
-```bash
-    commit 2ceb18267ac626b4cc1e30974c5aa55ec5ee9c41 (HEAD -> main, origin/main)
-    Author: nikhil296 <nikhilgautam1729@gmail.com>
-    Date:   Mon Mar 20 23:25:50 2023 +0530
+    ***`git log`*** : shows the history of commits made with details about the commit.
+    ```bash
+        commit 2ceb18267ac626b4cc1e30974c5aa55ec5ee9c41 (HEAD -> main, origin/main)
+        Author: nikhil296 <nikhilgautam1729@gmail.com>
+        Date:   Mon Mar 20 23:25:50 2023 +0530
 
-        update
-```
+            update
+    ```
 
-***`git status`*** : shows the status of files, ones in staging area, ones that are untracked.
+    ***`git status`*** : shows the status of files, ones in staging area, ones that are untracked.
 
-***`git `*** :
+    ***`git `*** :
     
 
 
