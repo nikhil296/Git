@@ -22,7 +22,7 @@
         update
 ```
 
-- ***``*** : 
+- ***`git status`*** : shows the status of files, ones in staging area, ones that are untracked.
 
 
     
