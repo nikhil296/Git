@@ -12,7 +12,6 @@
                                      based on your previous changes.
 
 - ***`git log`*** : shows the history of commits made with details about the commit.
-   
     **eg :** 
 ```bash
     commit 2ceb18267ac626b4cc1e30974c5aa55ec5ee9c41 (HEAD -> main, origin/main)
@@ -24,7 +23,7 @@
 
 - ***`git status`*** : shows the status of files, ones in staging area, ones that are untracked.
 
-
+- ***`git `*** :
     
 
 
