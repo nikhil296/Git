@@ -24,7 +24,7 @@
         3. Secure   (All changes we make in our code are secure).
         4. Flexibility  (many support and other gui s/w are there for git).
     Installation :
-        - MacOs :  "brew install git"
+        - MacOs :  ***`"brew install git"`***
     - "Version Control System (VCS)" : a category of software tools that helps in recording 
             changes made to files by keeping a track of modifications done in the code.
     - a popular VCS, created by "Linus Torvald" in 2005 and has been maintained 
