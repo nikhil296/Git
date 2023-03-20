@@ -14,8 +14,9 @@
                                      based on your previous changes.
 
 - ***`git log`*** : shows the history of commits made with details about the commit.
+            
             ```
-            **eg :** commit 2ceb18267ac626b4cc1e30974c5aa55ec5ee9c41 (HEAD -> main, origin/main)
+                    **eg :** commit 2ceb18267ac626b4cc1e30974c5aa55ec5ee9c41 (HEAD -> main, origin/main)
                      Author: nikhil296 <nikhilgautam1729@gmail.com>
                      Date:   Mon Mar 20 23:25:50 2023 +0530
 
