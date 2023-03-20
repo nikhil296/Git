@@ -7,8 +7,8 @@
                         where we can track all the changes.
 
 - ***`git add <filename1> <filename2>`*** : adds given untracked file to staging area for tracking.  
-we can add as many files here as we want.  
-to add all files at once ***`"git add ."`*** (not recommended, as it is not safe).
+                    we can add as many files here as we want.  
+                    to add all files at once ***`"git add ."`*** (not recommended, as it is not safe).
 
 - ***`git commit -m "<message>"`*** : commits changes from staging area and creates a new version
                                      based on your previous changes.
