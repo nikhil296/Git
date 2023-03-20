@@ -13,8 +13,8 @@
 - ***`git commit -m "<message>"`*** : commits changes from staging area and creates a new version
                                      based on your previous changes.
 
-- ***`git log`*** : shows the history of commits made with details about the commit.
-    **eg :**
+- ***`git log`*** : shows the history of commits made with details about the commit.<br\>
+    **eg :** 
 ```sh
     commit 2ceb18267ac626b4cc1e30974c5aa55ec5ee9c41 (HEAD -> main, origin/main)
     Author: nikhil296 <nikhilgautam1729@gmail.com>
