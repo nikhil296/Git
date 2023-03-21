@@ -1,4 +1,5 @@
-## How Exactly git stores data internally :
+# How Exactly git stores data internally :
+## How git handles files :
     - internally git is a "<key,  value>" datastore.
     - [ key ] :
         . Hash of the data we want to store.
@@ -22,7 +23,7 @@
 
 **NOTE : all the above complex internal structure can be visualized inside the `" .git "` folder.**
 
-## Visualization : 
+### Visualization : 
     -       .git
             ├── HEAD
             ├── config
@@ -49,7 +50,7 @@
 
 **NOTE  : `inside git content is stored only once`**
 
-## Explanation :
+### Explanation :
     - if we create a file,
        "test1.js"  ->  { console.log("Hi there!"); }
        next, adding this file to git repo will create a folder inside ".git -> object"
@@ -121,4 +122,4 @@
                10
                └── b20aa995a4e19d19cc3a5314802ac96f87696d
       
-
+## How git handles directories :
