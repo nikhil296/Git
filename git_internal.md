@@ -2,6 +2,17 @@
     - internally git is a "<key,  value>" datastore.
     - "key" :
         . Hash of the data we want to store.
-        . 40 - digit hexadecimal value.
+        . 40-digit hexadecimal value.
+        . for same value, this hash will be same.
             
-    - "value" : actual data.
+    - "value" : 
+        . actual data.
+        . git stores the compressed data in a "blob" and some more metadata in the header.
+            - ' blob ' :
+                . "binary large object"     or     "big large object"
+                . it is a data type to store very large piece of data inside an object.
+                .   
+                    | First Header  | Second Header |
+                    | ------------- | ------------- |
+                    | Content Cell  | Content Cell  |
+                    | Content Cell  | Content Cell  |
