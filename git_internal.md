@@ -125,7 +125,7 @@
                └── b20aa995a4e19d19cc3a5314802ac96f87696d
 </details>
 
-## How git handles directories :
+### How git handles directories :
 <details>
 <summary>Details : </summary>
     - 
