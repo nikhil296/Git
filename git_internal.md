@@ -13,6 +13,6 @@
                 . it is a data type to store very large piece of data inside an object.
                 .   
 | blob  | size of content |
-| ------------- | ------------- |
+| -------------------------- |
 | \0  - 'delimeter'  |
 | content of the data |
