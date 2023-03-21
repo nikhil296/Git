@@ -1,5 +1,7 @@
 # How Exactly git stores data internally :
-## How git handles files :
+<details>
+
+<summary>How git handles files :</summary>
     - internally git is a "<key,  value>" datastore.
     - [ key ] :
         . Hash of the data we want to store.
@@ -121,5 +123,6 @@
         it will be represented by 
                10
                └── b20aa995a4e19d19cc3a5314802ac96f87696d
-      
+</details>
+
 ## How git handles directories :
