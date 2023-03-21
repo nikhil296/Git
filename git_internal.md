@@ -12,7 +12,7 @@
                 . "binary large object"     or     "big large object"
                 . it is a data type to store very large piece of data inside an object.
                 .   
-                    | First Header  | Second Header |
-                    | ------------- | ------------- |
-                    | Content Cell  | Content Cell  |
-                    | Content Cell  | Content Cell  |
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
