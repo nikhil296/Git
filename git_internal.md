@@ -20,7 +20,7 @@
                   |                           content of the data                               |
                   |_____________________________________________________________________________|
 
-**NOTE : all the above complex internal structure can be visualized inside the " .git " folder.**
+**NOTE : all the above complex internal structure can be visualized inside the `" .git "` folder.**
 
 ## Visualization : 
     -       .git
@@ -47,4 +47,4 @@
         . remaining 38 chars are used to creating a file.
             eg : " 9de29bb2d1d6434b8b29ae775ad8c2e48c5391 "
 
-**###NOTE  : `inside git content is stored only once`**
+**NOTE  : `inside git content is stored only once`**
