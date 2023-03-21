@@ -18,3 +18,5 @@
                   |_____________________________________________________________________________|
                   |                           content of the data                               |
                   |_____________________________________________________________________________|
+
+**NOTE : all the above complex internal structure can be visualized inside the " .git " folder.**
