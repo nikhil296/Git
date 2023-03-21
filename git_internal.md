@@ -48,3 +48,77 @@
             eg : " 9de29bb2d1d6434b8b29ae775ad8c2e48c5391 "
 
 **NOTE  : `inside git content is stored only once`**
+
+## Explanation :
+    - if we create a file,
+       "test1.js"  ->  { console.log("Hi there!"); }
+       next, adding this file to git repo will create a folder inside ".git -> object"
+       now,
+       if we create another file "test2.js" with same data { console.log("Hi there!"); }
+       and
+       adding this file to git repor will not create new folder inside the ".git -> object"
+       bcz
+       git does not store duplicate content.
+        .git
+        ├── HEAD
+        ├── config
+        ├── description
+        ├── index
+        ├── info
+        │   └── exclude
+        ├── objects
+        │   ├── e6
+        │   │   └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+        │   ├── info
+        │   └── pack
+        └── refs
+            ├── heads
+            └── tags
+
+    - if we create "test3.js" with content { console.log("I am Batman"); }
+      and add this to repo, the tree will look like below.
+        .git
+        ├── HEAD
+        ├── config
+        ├── description
+        ├── index
+        ├── info
+        │   └── exclude
+        ├── objects
+        │   ├── 10
+        │   │   └── b20aa995a4e19d19cc3a5314802ac96f87696d
+        │   ├── e6
+        │   │   └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+        │   ├── info
+        │   └── pack
+        └── refs
+            ├── heads
+            └── tags
+    
+    - now, if we change content of "test3.js" to { console.log("Hi there!"); }
+        .git
+        ├── HEAD
+        ├── config
+        ├── description
+        ├── index
+        ├── info
+        │   └── exclude
+        ├── objects
+        │   ├── 10
+        │   │   └── b20aa995a4e19d19cc3a5314802ac96f87696d
+        │   ├── e6
+        │   │   └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+        │   ├── info
+        │   └── pack
+        └── refs
+            ├── heads
+            └── tags
+        the tree will still look like this, but "test3.js" is now stored in,
+               e6
+               └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391 
+    - now if we create a new file say "test4.js" and content { console.log("I am Batman"); }
+        it will be represented by 
+               10
+               └── b20aa995a4e19d19cc3a5314802ac96f87696d
+      
+
