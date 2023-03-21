@@ -11,8 +11,8 @@
             - ' blob ' :
                 . "binary large object"     or     "big large object"
                 . it is a data type to store very large piece of data inside an object.
-                .   
-| blob  | size of content |
-| -------------------------- |
-| \0  - 'delimeter'  |
-| content of the data |
+                . |  blob   |   size of content     |
+                  ___________________________________
+                  | \0  - 'delimeter'               |
+                  ___________________________________
+                  | content of the data             |
