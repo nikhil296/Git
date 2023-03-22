@@ -134,9 +134,9 @@
 <summary>Details : </summary>
 
     - Tree :
-        - Directories are represented by "Tree Object".
-        - It stores information about directories and their content.
-        - It contains pointers to other blobs and trees.
+        . Directories are represented by "Tree Object".
+        . It stores information about directories and their content.
+        . It contains pointers to other blobs and trees.
         eg :-
                                 Tree 
                     ______________|____________
