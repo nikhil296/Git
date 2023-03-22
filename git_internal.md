@@ -160,7 +160,10 @@
 <summary>Details : </summary>
 
     - " git cat-file <flag> <hash (5-6 chars only)> "
-    - <flag> :      ' -t ' = tells type of file,  ' -p ' = prints content of file.
+    - <flag> :
+        . ' -t ' = tells type of object,  
+        . ' -p ' = prints content of object.
+        
 eg :- 
     `git cat-file -t 10b20`     = "blob"
     `git cat-file -p 10b20`     = "console.log("Hi there!");"
@@ -175,18 +178,6 @@ eg :-
 
 eg :-
     `git cat-file -t f95c7`     = "blob"
-    `git cat-file -p f95c7`     = "console.log("Hi there");"
-
-        . Directories are represented by "Tree Object".
-        . It stores information about directories and their content.
-        . It contains pointers to other blobs and trees.
-        eg :-
-                                Tree 
-                    ______________|____________
-                   |                           |
-                  blob                       Tree
-                                 ______________|____________
-                                |                           |
-                               blob                        blob  
+    `git cat-file -p f95c7`     = "console.log("Hi there");" 
 
 </details>
