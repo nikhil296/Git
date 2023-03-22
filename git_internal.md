@@ -3,7 +3,9 @@
     - the objects are stored in compressed form.
     - it mainly stores data about the change & algorithmically shows us the file content with 
       that change.
-      
+    - even if we delete any files or folder in git repo, the objects in ".git" is not deleted
+      cuz, we can anytime rollback to the previous change/version with this feature.
+
 ### How git handles files
 <details>
 <summary>Details : </summary>
@@ -157,7 +159,10 @@
 <details>
 <summary>Details : </summary>
 
-    - Tree :
+    - " git cat-file <flag> <hash (5-6 chars only)> "
+    - <flag> :      ' -t ' = tells type of file,  ' -p ' = prints content of file.
+    eg :- 
+***git cat-file -t ***
         . Directories are represented by "Tree Object".
         . It stores information about directories and their content.
         . It contains pointers to other blobs and trees.
