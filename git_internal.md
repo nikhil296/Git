@@ -2,6 +2,7 @@
 ### How git handles files
 <details>
 <summary>Details : </summary>
+    - Files are represented by "blob Object".
     - internally git is a "<key,  value>" datastore.
     - [ key ] :
         . Hash of the data we want to store.
@@ -129,23 +130,16 @@
 <details>
 <summary>Details : </summary>
     - Tree :
+        . Directories are represented by "Tree Object".
         . It stores information about directories and their content.
         . It contains pointers to other blobs and trees.
         eg :-
-```mermaid
-graph TD;
-    Tree1-->blob1;
-    Tree1-->Tree2;
-    Tree2-->blob2;
-    Tree2-->Tree3;
-```
+                                Tree 
+                    ______________|____________
+                   |                           |
+                  blob                       Tree
+                                 ______________|____________
+                                |                           |
+                               blob                        blob  
 
 </details>
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
