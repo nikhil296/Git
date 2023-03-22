@@ -1,4 +1,9 @@
 # How Exactly git stores data internally :
+    - git internally does a lot of optimization.
+    - the objects are stored in compressed form.
+    - it mainly stores data about the change & algorithmically shows us the file content with 
+      that change.
+      
 ### How git handles files
 <details>
 <summary>Details : </summary>
@@ -130,6 +135,25 @@
 </details>
 
 ### How git handles directories :
+<details>
+<summary>Details : </summary>
+
+    - Tree :
+        . Directories are represented by "Tree Object".
+        . It stores information about directories and their content.
+        . It contains pointers to other blobs and trees.
+        eg :-
+                                Tree 
+                    ______________|____________
+                   |                           |
+                  blob                       Tree
+                                 ______________|____________
+                                |                           |
+                               blob                        blob  
+
+</details>
+
+### How to check the content and type of a blob or tree object : 
 <details>
 <summary>Details : </summary>
 
