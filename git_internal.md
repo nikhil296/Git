@@ -162,7 +162,7 @@
     - " git cat-file <flag> <hash (5-6 chars only)> "
     - <flag> :      ' -t ' = tells type of file,  ' -p ' = prints content of file.
 eg :- 
-    `git cat-file -t 10b20`     = "blob"    
+    `git cat-file -t 10b20`     = "blob"
     `git cat-file -p 10b20`     = "console.log("Hi there!");"
 
 eg :-
