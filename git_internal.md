@@ -139,6 +139,9 @@ graph TD;
     Tree2-->blob2;
     Tree2-->Tree3;
 ```
+
+</details>
+
 ```mermaid
 graph TD;
     A-->B;
@@ -146,4 +149,3 @@ graph TD;
     B-->D;
     C-->D;
 ```
-</details>
