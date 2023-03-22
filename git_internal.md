@@ -134,9 +134,16 @@
         eg :-
 ```mermaid
 graph TD;
-        Tree1-->blob1;
-        Tree1-->Tree2;
-        Tree2-->blob2;
-        Tree2-->Tree3;
+    Tree1-->blob1;
+    Tree1-->Tree2;
+    Tree2-->blob2;
+    Tree2-->Tree3;
+```
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
 ```
 </details>
