@@ -2,8 +2,11 @@
 ### How git handles files
 <details>
 <summary>Details : </summary>
+
     - Files are represented by "blob Object".
+
     - internally git is a "<key,  value>" datastore.
+
     - [ key ] :
         . Hash of the data we want to store.
         . 40-digit hexadecimal value. 
@@ -129,6 +132,7 @@
 ### How git handles directories :
 <details>
 <summary>Details : </summary>
+
     - Tree :
         - Directories are represented by "Tree Object".
         - It stores information about directories and their content.
