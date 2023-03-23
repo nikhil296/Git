@@ -194,49 +194,49 @@ eg :-
         3. message,
         4. Parent commit.
         
-    before commit                                           after commit
-.git                                                    .git
-├── HEAD                                                ├── COMMIT_EDITMSG
-├── config                                              ├── HEAD
-├── description                                         ├── config
-├── index                                               ├── description
-├── info                                                ├── index        
-│   └── exclude                                         ├── info                                
-├── objects                                             |   └── exclude                    
-│   ├── 10                                              ├── logs               
-│   │   └── b20aa995a4e19d19cc3a5314802ac96f87696d      │   ├── HEAD                            
-│   ├── 4b                                              │   └── refs                    
-│   │   └── 0a5bc78e3be70b820bfc7249f7c0200ac5cd94      |       └── heads   
-│   ├── 9a                                              |            └── main        
-│   │   └── 455b676e4880aeee03043a3113e09eb8519cd7      ├── objects
-│   ├── cb                                              │   ├── 10
-│   │   └── df7e4bb92d146367826585642517dca6c890f8      │   │   └── b20aa995a4e19d19cc3a5314802ac96f87696d
-│   ├── d1                                              │   ├── 13                    
-│   │   └── ce06f644d2ca5ca7ecc124bc2879fc058ddfa1      │   │   └── eef8fc790f3fe70b9ccbda6ec41b81386322b0 
-│   ├── e6                                              │   ├── 4b 
-│   │   └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391      │   │   └── 0a5bc78e3be70b820bfc7249f7c0200ac5cd94 
-│   ├── f9                                              │   ├── 7e 
-│   │   └── 5c728a57f81e55493290e35d0fa0fc0f185cc7      │   │   └── fb1a4176760219b281c527baa2ba692d2ac19a 
-│   ├── info                                            │   ├── 9a 
-│   └── pack                                            │   │   └── 455b676e4880aeee03043a3113e09eb8519cd7 
-└── refs                                                │   ├── bb 
-    ├── heads                                           │   │   └── a717de1d23f6994853c15246c8f723a4f42914 
-    └── tags                                            │   ├── cb 
-                                                        │   │   └── df7e4bb92d146367826585642517dca6c890f8
-                                                        │   ├── d1
-                                                        │   │   └── ce06f644d2ca5ca7ecc124bc2879fc058ddfa1
-                                                        │   ├── e6
-                                                        │   │   └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
-                                                        │   ├── f2
-                                                        │   │   └── c42ca21dfa420bb1de6b75fb2c06be3eb8bfdb
-                                                        │   ├── f9
-                                                        │   │   └── 5c728a57f81e55493290e35d0fa0fc0f185cc7
-                                                        │   ├── info
-                                                        │   └── pack
-                                                        └── refs
-                                                            ├── heads
-                                                            │   └── main
-                                                            └── tags
+-    before commit                                           after commit
+-   .git                                                    .git
+    ├── HEAD                                                ├── COMMIT_EDITMSG
+    ├── config                                              ├── HEAD
+    ├── description                                         ├── config
+    ├── index                                               ├── description
+    ├── info                                                ├── index        
+    │   └── exclude                                         ├── info                                
+    ├── objects                                             |   └── exclude                    
+    │   ├── 10                                              ├── logs               
+    │   │   └── b20aa995a4e19d19cc3a5314802ac96f87696d      │   ├── HEAD                            
+    │   ├── 4b                                              │   └── refs                    
+    │   │   └── 0a5bc78e3be70b820bfc7249f7c0200ac5cd94      |       └── heads   
+    │   ├── 9a                                              |            └── main        
+    │   │   └── 455b676e4880aeee03043a3113e09eb8519cd7      ├── objects
+    │   ├── cb                                              │   ├── 10
+    │   │   └── df7e4bb92d146367826585642517dca6c890f8      │   │   └── b20aa995a4e19d19cc3a5314802ac96f87696d
+    │   ├── d1                                              │   ├── 13                    
+    │   │   └── ce06f644d2ca5ca7ecc124bc2879fc058ddfa1      │   │   └── eef8fc790f3fe70b9ccbda6ec41b81386322b0 
+    │   ├── e6                                              │   ├── 4b 
+    │   │   └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391      │   │   └── 0a5bc78e3be70b820bfc7249f7c0200ac5cd94 
+    │   ├── f9                                              │   ├── 7e 
+    │   │   └── 5c728a57f81e55493290e35d0fa0fc0f185cc7      │   │   └── fb1a4176760219b281c527baa2ba692d2ac19a 
+    │   ├── info                                            │   ├── 9a 
+    │   └── pack                                            │   │   └── 455b676e4880aeee03043a3113e09eb8519cd7 
+    └── refs                                                │   ├── bb 
+        ├── heads                                           │   │   └── a717de1d23f6994853c15246c8f723a4f42914 
+        └── tags                                            │   ├── cb 
+                                                            │   │   └── df7e4bb92d146367826585642517dca6c890f8
+                                                            │   ├── d1
+                                                            │   │   └── ce06f644d2ca5ca7ecc124bc2879fc058ddfa1
+                                                            │   ├── e6
+                                                            │   │   └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+                                                            │   ├── f2
+                                                            │   │   └── c42ca21dfa420bb1de6b75fb2c06be3eb8bfdb
+                                                            │   ├── f9
+                                                            │   │   └── 5c728a57f81e55493290e35d0fa0fc0f185cc7
+                                                            │   ├── info
+                                                            │   └── pack
+                                                            └── refs
+                                                                ├── heads
+                                                                │   └── main
+                                                                └── tags
 
     - git cat-file -t 13ee  =  "commit"
     - git cat-file -p 13ee  =  'point to the root directory (f2c4 ...)'
