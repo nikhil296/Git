@@ -5,6 +5,7 @@
       that change.
     - even if we delete any files or folder in git repo, the objects in ".git" is not deleted
       cuz, we can anytime rollback to the previous change/version with this feature.
+    - git is the quintessential real life example of software that uses data structures like {Hashin, trees, Linked list, etc}
 
 ### How git handles files
 <details>
@@ -276,5 +277,16 @@ eg :-
         committer nikhil296 <nikhilgautam1729@gmail.com> 1679575224 +0530
 
         second commit
-        
+    
+    - now same with the third commit.
+    - eg :
+        git cat-file -t 46c2    =   "commit"
+        git cat-file -p 46c2
+        tree d90abf9a73682138ed3cfa5c70a7ecd90d6ecd56                       - 'root directory'
+        parent 21f26e22b7edb66b71a7811ae243c1bd03c01e94                     - 'second commit'
+        author nikhil296 <nikhilgautam1729@gmail.com> 1679576754 +0530      
+        committer nikhil296 <nikhilgautam1729@gmail.com> 1679576754 +0530
+
+        third commit
+
 </details>
