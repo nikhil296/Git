@@ -276,36 +276,5 @@ eg :-
         committer nikhil296 <nikhilgautam1729@gmail.com> 1679575224 +0530
 
         second commit
-
-
-
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-
-
-
-
-
-eg :- 
-    `git cat-file -t 10b20`     = "blob"
-    `git cat-file -p 10b20`     = "console.log("Hi there!");"
-
-eg :-
-    `git cat-file -t cbdf7`     = "blob"
-    `git cat-file -p cbdf7`     = "console.log("I am Nikhil");"
-
-eg :-
-    `git cat-file -t e69de`     = "blob"
-    `git cat-file -p e69de`     = ""
-
-eg :-
-    `git cat-file -t f95c7`     = "blob"
-    `git cat-file -p f95c7`     = "console.log("Hi there");" 
-
+        
 </details>
