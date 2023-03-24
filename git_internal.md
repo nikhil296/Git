@@ -366,7 +366,10 @@ eg :
                 Second commit using amend
 </details>
 
-#### Note : `git log --oneline` tells us where the head is pointing to
+### `git log --oneline` : tells us where the head is pointing to 
+eg :-
+    git log --oneline
+    fd4f241 (HEAD -> main) Second commit using amend
 
 ### `git rm ` vs `git restore ` :-
 <details>
