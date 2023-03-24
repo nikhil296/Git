@@ -393,7 +393,6 @@ eg :
 <summary>Details : </summary>
  
 - `git restore` :
-
     . The "restore" command helps to unstage or even discard uncommited local changes.
     . on the one hand, the command can be used to undo the effects of git add and unstage changes you have 
         previously added to the staging area.
