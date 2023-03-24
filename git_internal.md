@@ -428,4 +428,8 @@ eg :
 <details>
 <summary>Details : </summary>
 
+    - It is an interactive way to add changes to staging area.
+    - it opens an interactive tool where it shows all the changes and we can keep or discard the piece of "hunk".
+    - "hunk" : the lines changed are together called as hunk.
+    
 </details>
