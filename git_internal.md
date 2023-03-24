@@ -367,14 +367,32 @@ eg :
 </details>
 
 ### `git log --oneline` : tells us where the head is pointing to 
-eg :-
-    git log --oneline
-    fd4f241 (HEAD -> main) Second commit using amend
+    - eg :-
+        git log --oneline
+        fd4f241 (HEAD -> main) Second commit using amend
+    - HEAD alays points to the latest commits, but we can make it point to other commits as well.
+    - whereever the HEAD points we can see that change in our project.
 
 ### `git rm ` vs `git restore ` :-
 <details>
 <summary>Details : </summary>
+    - `git restore` :
+        . The "restore" command helps to unstage or even discard uncommited local changes.
+        . on the one hand, the command can be used to undo the effects of git add and unstage changes you have 
+            previously added to the staging area.
+            eg :
+                - " git restore --staged <fileName> "
 
+        . on the other hand, it can also be used to discard the local changes in a file, thereby restoring 
+            its last committed state.
+            eg :
+                - " git restore <fileName> "
+        . NOTE : git restore will not work in a newly created repository as you will have to make atleast 1 commit
+                    before using "restore", otherwise it gives error.
+                    
+                    error : " fatal: could not resolve HEAD "
+
+    - `git rm` :
 </details>
 
 ### `git add -p ` :-
