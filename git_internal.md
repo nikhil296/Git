@@ -371,11 +371,15 @@ eg :
 </details>
 
 ### `git log --oneline` : tells us where the head is pointing to 
+<details> 
+<summary>Details : </summary>
+
     - eg :-
         git log --oneline
         fd4f241 (HEAD -> main) Second commit using amend
     - HEAD alays points to the latest commits, but we can make it point to other commits as well.
     - whereever the HEAD points we can see that change in our project.
+</details>
 
 ### `git rm ` vs `git restore ` :-
 <details>
