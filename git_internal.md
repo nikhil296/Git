@@ -19,9 +19,16 @@
         . "git add " command adds the saved files into the staging area.
         . file/changes which are surely going to be part of next commit.
         . It is the place where git knows what will change between the current and next commit.
+        . "git ls-files"  -  shows all files and folders in the staging area.
 
     - Local Repository area : 
         . "git commit " commits the files from staging area to local repo.
+
+### `git ls-files`  vs  `ls` :-
+
+    - `git ls-files`  :  it shows all files in the staging area.
+    - `ls`            :  it is a linux command that shows all files/folders in the local working directory.
+
 
 ### How git handles files
 <details>
@@ -384,25 +391,39 @@ eg :
 ### `git rm ` vs `git restore ` :-
 <details>
 <summary>Details : </summary>
+ 
+- `git restore` :
 
-    - `git restore` :
+    . The "restore" command helps to unstage or even discard uncommited local changes.
+    . on the one hand, the command can be used to undo the effects of git add and unstage changes you have 
+        previously added to the staging area.
+        eg :
+            - " git restore --staged <fileName> "
+    . on the other hand, it can also be used to discard the local changes in a file, thereby restoring 
+        its last committed state.
+        eg :
+            - " git restore <fileName> "
+    . NOTE : git restore will not work in a newly created repository as you will have to make atleast 1 commit
+                before using "restore", otherwise it gives error.
+                
+                error : " fatal: could not resolve HEAD "
 
-        . The "restore" command helps to unstage or even discard uncommited local changes.
-        . on the one hand, the command can be used to undo the effects of git add and unstage changes you have 
-            previously added to the staging area.
-            eg :
-                - " git restore --staged <fileName> "
+- `git rm` :
 
-        . on the other hand, it can also be used to discard the local changes in a file, thereby restoring 
-            its last committed state.
-            eg :
-                - " git restore <fileName> "
-        . NOTE : git restore will not work in a newly created repository as you will have to make atleast 1 commit
-                    before using "restore", otherwise it gives error.
-                    
-                    error : " fatal: could not resolve HEAD "
+    . Remove files from both staging and working directory :-
+        - git rm <fileName>
+        - git rm -r <folder (removes all files in that folder)>/<file>/<"."(to remove all files in root folder at once)>
+    
+    . Remove files from only staging & not from local working directory :-
+        - git rm --cached <fileName>  :  to remove 1 or multiple file
+            eg :-
+                git rm --cached test1.js test3.js
+                git rm --cached test1.js
+        - git rm --cached -r <folder>/<file>/<".">  :  to remove folders
+            eg :-
+                git rm --cached -r folder1 folder2 test2.js
+                git rm --cached -r .
 
-    - `git rm` :
 </details>
 
 ### `git add -p ` :-
