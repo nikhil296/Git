@@ -175,6 +175,7 @@
 ### How to check the content and type of a blob or tree object `git cat-file <flag> <hash>` : 
 <details>
 <summary>Details : </summary>
+
     - It is recommended to check the type and content of object in .git folder
       after commiting the change.
     - " git cat-file <flag> <hash (5-6 chars only)> "
@@ -203,6 +204,7 @@ eg :-
 ### `Commit` in git is a object :-
 <details>
 <summary>Details : </summary>
+
     - commit in git is alaso an object like tree and blob.
     - every commit points to a tree.
     - The commit object has data of the 
@@ -310,6 +312,7 @@ eg :-
 ### `git commit --amend ` to make minor changes to previous commit :-
 <details>
 <summary>Details : </summary>
+
     - It is used when we want to make changes to previous commit.
     - Suppose we are told to complete 1 feature in 1 commit, and we made a commit
       but we forgot to add 1 line of code(say) then if we add this line and make anothr commit
@@ -319,6 +322,7 @@ eg :-
       in the internal (tree .git) we can see that a new commit object is created
       and also the old object remains for previous commit.
 eg :
+
     .git
     .
     .
@@ -376,7 +380,9 @@ eg :
 ### `git rm ` vs `git restore ` :-
 <details>
 <summary>Details : </summary>
+
     - `git restore` :
+
         . The "restore" command helps to unstage or even discard uncommited local changes.
         . on the one hand, the command can be used to undo the effects of git add and unstage changes you have 
             previously added to the staging area.
