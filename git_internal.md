@@ -414,13 +414,13 @@ eg :
         - git rm -r <"folder" (removes all files in that folder)> / <"file"> / <"."(to remove all files in root folder at once)>
     - Remove files from only staging & not from local working directory :-
         - git rm --cached <"fileName">  :  to remove 1 or multiple file
-            eg :-
-                git rm --cached test1.js test3.js
-                git rm --cached test1.js
+            - eg :-
+                - git rm --cached test1.js test3.js
+                - git rm --cached test1.js
         - git rm --cached -r <"folder"> / <"file"> / <".">  :  to remove folders
-            eg :-
-                git rm --cached -r folder1 folder2 test2.js
-                git rm --cached -r .
+            - eg :-
+                - git rm --cached -r folder1 folder2 test2.js
+                - git rm --cached -r .
 
 </details>
 
