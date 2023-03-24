@@ -1,3 +1,4 @@
+
 # How Exactly git stores data internally :
     - git internally does a lot of optimization.
     - the objects are stored in compressed form.
@@ -6,6 +7,21 @@
     - even if we delete any files or folder in git repo, the objects in ".git" is not deleted
       cuz, we can anytime rollback to the previous change/version with this feature.
     - git is the quintessential real life example of software that uses data structures like {Hashin, trees, Linked list, etc}
+
+### Code areas :-
+    - Working Area : 
+        . every code we write and save is in this area.
+        . the files/changes which are not in ur staging area and maybe currently not hadled 
+          by git are in working area.
+        . these files are also called as untracked files sometimes (when the file has never been    tracked or handled by git).
+
+    - Staging Area : 
+        . "git add " command adds the saved files into the staging area.
+        . file/changes which are surely going to be part of next commit.
+        . It is the place where git knows what will change between the current and next commit.
+
+    - Local Repository area : 
+        . "git commit " commits the files from staging area to local repo.
 
 ### How git handles files
 <details>
@@ -156,7 +172,7 @@
 
 </details>
 
-### How to check the content and type of a blob or tree object : 
+### How to check the content and type of a blob or tree object `git cat-file <flag> <hash>` : 
 <details>
 <summary>Details : </summary>
     - It is recommended to check the type and content of object in .git folder
@@ -288,5 +304,78 @@ eg :-
         committer nikhil296 <nikhilgautam1729@gmail.com> 1679576754 +0530
 
         third commit
+
+</details>
+
+### `git commit --amend ` to make minor changes to previous commit :-
+<details>
+<summary>Details : </summary>
+    - It is used when we want to make changes to previous commit.
+    - Suppose we are told to complete 1 feature in 1 commit, and we made a commit
+      but we forgot to add 1 line of code(say) then if we add this line and make anothr commit
+      it will become 2 commits so instead we can add this new commit to previous one itself using
+      " git ammend ".
+    - In the commit history it will show only 1 commit that is the latest one, but
+      in the internal (tree .git) we can see that a new commit object is created
+      and also the old object remains for previous commit.
+eg :
+    .git
+    .
+    .
+    .
+    ├── objects
+    │   ├── 0c
+    │   │   └── 4784b363cbfc7c64ccb0c94bbc2b9caee8ce74
+    │   ├── 76
+    │   │   └── 85c301e57524e6456719c5137bd3b4a5d9b5ef
+    │   ├── e2                                            // this is commit object "first commit"
+    │   │   └── 911ed74569ac4e2bea90c995544eb3cd167488     
+    │   ├── info
+    │   └── pack
+    .
+
+    after doing second commit using "git --amend"
+
+    .git
+    .
+    .
+    .
+    ├── objects
+    │   ├── 0c
+    │   │   └── 4784b363cbfc7c64ccb0c94bbc2b9caee8ce74
+    │   ├── 76
+    │   │   └── 85c301e57524e6456719c5137bd3b4a5d9b5ef
+    │   ├── c0
+    │   │   └── 8f3879528077ee9446810dd4b5ac898834d580
+    │   ├── e2                                          // this is commit object "first commit"
+    │   │   └── 911ed74569ac4e2bea90c995544eb3cd167488
+    │   ├── f4
+    │   │   └── ba1013b22cecaf5899b0e6646862a4a73e6a01
+    │   ├── fd                                          // this is commit object "second commit"
+    │   │   └── 4f2410fd558415150bf6e029f4d9202ae30067
+    │   ├── info
+    │   └── pack
+    .
+    
+    * we can see there are 2 objects for 2 commits but doing " git log " we get;
+        git log
+            commit fd4f2410fd558415150bf6e029f4d9202ae30067 (HEAD -> main)
+            Author: nikhil296 <nikhilgautam1729@gmail.com>
+            Date:   Fri Mar 24 11:05:31 2023 +0530
+
+                Second commit using amend
+</details>
+
+#### Note : `git log --oneline` tells us where the head is pointing to
+
+### `git rm ` vs `git restore ` :-
+<details>
+<summary>Details : </summary>
+
+</details>
+
+### `git add -p ` :-
+<details>
+<summary>Details : </summary>
 
 </details>
