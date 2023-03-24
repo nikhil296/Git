@@ -390,25 +390,24 @@ eg :
 
 ### `git rm ` vs `git restore ` :-
 <details>
-<summary>Details : </summary>
- 
-- `git restore` : 
+<summary>Details : </summary> 
 
-    . The "restore" command helps to unstage or even discard uncommited local changes.
-    . on the one hand, the command can be used to undo the effects of git add and unstage changes you have 
-        previously added to the staging area.
-        eg :
-            - " git restore --staged <fileName> "
-    . on the other hand, it can also be used to discard the local changes in a file, thereby restoring 
-        its last committed state.
-        eg :
-            - " git restore <fileName> "
-    . NOTE : git restore will not work in a newly created repository as you will have to make atleast 1 commit
-                before using "restore", otherwise it gives error.
-                
-                error : " fatal: could not resolve HEAD "
+- ***`git restore`*** : 
+        . The "restore" command helps to unstage or even discard uncommited local changes.
+        . on the one hand, the command can be used to undo the effects of git add and unstage changes you have 
+            previously added to the staging area.
+            eg :
+                - " git restore --staged <fileName> "
+        . on the other hand, it can also be used to discard the local changes in a file, thereby restoring 
+            its last committed state.
+            eg :
+                - " git restore <fileName> "
+        . NOTE : git restore will not work in a newly created repository as you will have to make atleast 1 commit
+                    before using "restore", otherwise it gives error.
+                    
+                    error : " fatal: could not resolve HEAD "
 
-- `git rm` :
+- ***`git rm`*** :
 
     . Remove files from both staging and working directory :-
         - git rm <fileName>
