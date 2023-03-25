@@ -1,4 +1,3 @@
-
 # How Exactly git stores data internally :
     - git internally does a lot of optimization.
     - the objects are stored in compressed form.
@@ -491,8 +490,15 @@ eg :
 ### `git branch -d <branch name>`   or    `git branch -D <branch name>` :-
 #### to delete any branch from local
     - we can delete any local branch by using above command.
+        eg :-
+            git branch -d <branch_name>
     - usually to delete branch we need to switch from the branch we want to delete to another branch.
+    - If the branch has unmerged changes, you can use the following command to force the deletion:
+        eg :- 
+            git branch -D <branch_name>
+
     - suppose we want to delete "demo" branch & we are in "feature_1" branch, so to delete "demo" we will have to
       make sure the "demo" branch is succesfully merged to "feature_1".
+
     - if we created new branch "demo" from "main" (say) and now if we made any changes in "demo" branch,
       again we will have to merge it to "main" to delete it from "main" or any other branch that we are currently in.
