@@ -488,7 +488,8 @@ eg :
         - Here's an example:
             git clone -b branch-name https://github.com/username/repo.git
 
-### `git branch -d <branch name>`   or    `git branch -D <branch name>`  to delete any branch from local :-
+### `git branch -d <branch name>`   or    `git branch -D <branch name>` :-
+##### to delete any branch from local
     - we can delete any local branch by using above command.
     - usually to delete branch we need to switch from the branch we want to delete to another branch.
     - suppose we want to delete "demo" branch & we are in "feature_1" branch, so to delete "demo" we will have to
