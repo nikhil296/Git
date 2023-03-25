@@ -434,15 +434,23 @@ eg :
 
 </details>
 
-### `git checkout -b <branchName> ` :-
+### `git checkout -b <branchName>` :-
     - This creates a new branch from an existing branch.
     - The new branch has all the changes of the parent branch until that commit (till where the HEAD points to in parent branch).
     - any changes made to this new branch is totally isolated from other branched or even the parent branch unless 
       we merge it to some other branch.
 
-### `git checkout <branchName> ` :-
+### `git checkout <branchName>` :-
     - This switches from one branch to another without creating a new one.
 
-### `git checkout -b <branchName> ` :-
-    - This creates a new branch from an existing branch.
-    - The new branch has all the changes of the parent branch until that commit (till where the HEAD points).
+### `git push origin <branchName>` :-
+    - to push changes from local repo to remote("origin") repo's specified branch.
+
+### `git push --set-upstream origin <branchName>` :-
+    - when we are making the very first push from any branch into the remote repo, we have to set an upstream.
+    - to avoid doing that every time with every new branch or repo, we can use below command.
+
+### `git config --global --add --bool push.autoSetupRemote true` :-
+    - This command push the current branch and set the remote as upstream automatically every time we push.
+    - The "--global" flag means this will apply to all git commands on your machine (regardless of which repo it is),
+      you can omit the flag to make it specific to a single repo on your machine.
