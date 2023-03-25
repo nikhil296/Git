@@ -55,3 +55,9 @@
     - Git is a version control system that lets you manage and keep track of your 
         source code history. 
     - GitHub is a cloud-based hosting service that lets you manage Git repositories.
+    
+| Git | GitHub/GitLab/Bitbucket |
+| --- | --- |
+| Software | Service |
+| Installed locally | Web hosted |
+| VCS to manage source code history | Service for managing git repositories    |

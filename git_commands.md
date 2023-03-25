@@ -21,8 +21,6 @@
 
 5. ***`git status`*** : shows the status of files, ones in staging area, ones that are untracked.
 
-6. ***`git `*** :
-
 
 Git Commands :  
     * NOTE - git commands are case sensitive.
