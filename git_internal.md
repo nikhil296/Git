@@ -436,8 +436,9 @@ eg :
 
 ### `git checkout -b <branchName> ` :-
     - This creates a new branch from an existing branch.
-    - The new branch has all the changes of the parent branch until that commit (till where the HEAD points).
-    - anychanges made to this new branch is totally isolated from other branched or even the parent branch unless we merge it to some other branch.
+    - The new branch has all the changes of the parent branch until that commit (till where the HEAD points to in parent branch).
+    - any changes made to this new branch is totally isolated from other branched or even the parent branch unless 
+      we merge it to some other branch.
 
 ### `git checkout <branchName> ` :-
     - This switches from one branch to another without creating a new one.
