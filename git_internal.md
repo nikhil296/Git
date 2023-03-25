@@ -431,5 +431,17 @@ eg :
     - It is an interactive way to add changes to staging area.
     - it opens an interactive tool where it shows all the changes and we can keep or discard the piece of "hunk".
     - "hunk" : the lines changed are together called as hunk.
-    
+
 </details>
+
+### `git checkout -b <branchName> ` :-
+    - This creates a new branch from an existing branch.
+    - The new branch has all the changes of the parent branch until that commit (till where the HEAD points).
+    - anychanges made to this new branch is totally isolated from other branched or even the parent branch unless we merge it to some other branch.
+
+### `git checkout <branchName> ` :-
+    - This switches from one branch to another without creating a new one.
+
+### `git checkout -b <branchName> ` :-
+    - This creates a new branch from an existing branch.
+    - The new branch has all the changes of the parent branch until that commit (till where the HEAD points).
