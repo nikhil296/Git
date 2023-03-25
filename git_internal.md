@@ -320,6 +320,7 @@ eg :-
 <details>
 <summary>Details : </summary>
 
+    - Syntax : "    git commit --amend -m "mesaage"    ".
     - It is used when we want to make changes to previous commit.
     - Suppose we are told to complete 1 feature in 1 commit, and we made a commit
       but we forgot to add 1 line of code(say) then if we add this line and make anothr commit
