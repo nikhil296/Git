@@ -396,12 +396,12 @@ eg :
 - ***`git restore`*** : 
 
     - The "restore" command helps to unstage or even discard uncommited local changes.
-    - on the one hand, the command can be used to undo the effects of git add and unstage changes you have 
-        previously added to the staging area.
+    - To undo the effects of git add and unstage changes you have previously added to the staging area.
         - eg :
             - " git restore --staged <"fileName"> "
-    - on the other hand, it can also be used to discard the local changes in a file, thereby restoring 
-        its last committed state.
+    - it will not undo the changes from file but it will just remove the changes from staging area and keep it 
+        in working directory. to remove it again from working directory as well use below command.
+    - To discard the local changes in a file, thereby restoring its last committed state.
         - eg :
             - " git restore <"fileName"> "
     - NOTE : git restore will not work in a newly created repository as you will have to make atleast 1 commit
@@ -443,15 +443,55 @@ eg :
 
 ### `git checkout <branchName>` :-
     - This switches from one branch to another without creating a new one.
+    - before checking out from any branch it is must for us to commit our changes in that branch.
 
 ### `git push origin <branchName>` :-
     - to push changes from local repo to remote("origin") repo's specified branch.
+    - before checking out from any branch it is must for us to commit our changes in that branch.
 
 ### `git push --set-upstream origin <branchName>` :-
     - when we are making the very first push from any branch into the remote repo, we have to set an upstream.
     - to avoid doing that every time with every new branch or repo, we can use below command.
 
+### `git push` :-
+    - to push changes from local repo to remote("origin") repo's specified branch.
+    - this command works only after we have set an upstream.
+    - we can set upstream and push using above command or tell git to set upstream automatically
+    - git will then set upstream branch name as the local working branch name automatically every time we do the 1st push
+      from a new branch.
+
 ### `git config --global --add --bool push.autoSetupRemote true` :-
     - This command push the current branch and set the remote as upstream automatically every time we push.
     - The "--global" flag means this will apply to all git commands on your machine (regardless of which repo it is),
       you can omit the flag to make it specific to a single repo on your machine.
+
+### `git merge` :-
+    - this command is used to merge changes of one branch to another branch.
+    - it is a combination of    { git add  +  git commit }
+
+    1. To merge from "feature_1" branch to "main" branch :-
+        - first checkout to "main" branch if not already.
+        - " git merge feature_1 "  :  this will open up an interactive commnadline to enter a message for merge commit.
+    
+    2. Conflicts in merging :-
+        - if we encounter any conflicts during merging we will have to manually remove the conflicts first.
+        -  then do - "git add"  &  "git commit" on it.
+        - this will merge the "feature_1" changes into "main".
+
+### `git clone` :-
+    1. To clone a Git repository from remote repo :
+        - eg :-
+           git clone https://github.com/username/repo.git
+
+    2. To clone a Git repository from a specific branch :
+        -  you can use the -b flag followed by the branch name. 
+        - Here's an example:
+            git clone -b branch-name https://github.com/username/repo.git
+
+### `git branch -d <branch name>`   or    `git branch -D <branch name>`  to delete any branch from local :-
+    - we can delete any local branch by using above command.
+    - usually to delete branch we need to switch from the branch we want to delete to another branch.
+    - suppose we want to delete "demo" branch & we are in "feature_1" branch, so to delete "demo" we will have to
+      make sure the "demo" branch is succesfully merged to "feature_1".
+    - if we created new branch "demo" from "main" (say) and now if we made any changes in "demo" branch,
+      again we will have to merge it to "main" to delete it from "main" or any other branch that we are currently in.
